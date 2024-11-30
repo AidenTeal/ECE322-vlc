@@ -1,0 +1,29 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**", // Include all project files
+        "/path/to/vlc/include", // Replace with your VLC include directory
+        "/usr/include", // Default system includes
+        "/usr/local/include", // Additional system includes if necessary
+        "/path/to/vlc/include/vlc" // VLC specific include directory
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc", // Path to the compiler you are using (gcc)
+      "intelliSenseMode": "linux-gcc-x64", // Ensure this matches your platform
+      "cStandard": "c11", // C standard to use
+      "cppStandard": "c++17", // C++ standard to use
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "/path/to/vlc/include", // Add VLC include path here too
+          "/usr/include",
+          "/usr/local/include"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ]
+}
